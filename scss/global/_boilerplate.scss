@@ -1,7 +1,14 @@
+@use "../util/index" as u;
+@use "../style/position" as p;
+
 body {
   margin: 0;
   padding: 0;
+  font-family: u.$font;
   box-sizing: border-box;
   background-color: black;
   color: white;
+}
+h1 {
+  position: p.$position;
 }

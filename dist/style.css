@@ -1,1 +1,1 @@
-body{margin:0;padding:0;box-sizing:border-box;background-color:#000;color:#fff}:root{--text-clor: blue;--text-size: 15px}h1{color:var(--text-clor);font-size:var(--text-size)}/*# sourceMappingURL=style.css.map */
+h1{margin-left:50px}body{margin:0;padding:0;font-family:"Rubik",sans-serif;box-sizing:border-box;background-color:#000;color:#fff}h1{position:50px}:root{--text-clor: blue;--text-size: 15px}h1{color:var(--text-clor);font-size:var(--text-size)}/*# sourceMappingURL=style.css.map */
