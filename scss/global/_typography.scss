@@ -9,11 +9,7 @@ h3 {
 }
 
 h1 {
-  font-size: 28px;
-
-  @include u.breakpoints(medium) {
-    font-size: 78px;
-  }
+  font-size: clamp(28px, 16px + 2vw, 40px);
 }
 
 p {
