@@ -1,0 +1,26 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  grid-template-rows: auto auto;
+  margin-inline: auto;
+  padding: 20px;
+  width: min(100% - 40px, 1000px);
+
+  &__main,
+  &__sidebar {
+    padding: 40px;
+  }
+
+  @media (min-width: 900px) {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  &__main {
+    background-color: rgb(4, 4, 116);
+  }
+  &__sidebar {
+    background-color: rgb(131, 6, 131);
+  }
+}
