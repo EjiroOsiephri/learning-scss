@@ -1,3 +1,5 @@
+@use "../util/index" as u;
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -12,7 +14,7 @@
     padding: 40px;
   }
 
-  @media (min-width: 900px) {
+  @include u.breakpoints(large) {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
   }
@@ -22,5 +24,13 @@
   }
   &__sidebar {
     background-color: rgb(131, 6, 131);
+    text-align: left;
+
+    @include u.breakpoint(medium) {
+      text-align: center;
+    }
+    @include u.breakpoint(small) {
+      text-align: right;
+    }
   }
 }
