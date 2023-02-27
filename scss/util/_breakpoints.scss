@@ -1,13 +1,15 @@
+@use "functions" as f;
+
 $breakpints-up: (
-  "meduim": 43.75em,
-  "large": 56.25em,
-  "xlarge": 90em,
+  "meduim": f.em(700),
+  "large": f.em(900),
+  "xlarge": f.em(1400),
 );
 
 $breakpints-down: (
-  "small": 43.74875em,
-  "medium": 56.24875em,
-  "large": 87.49875em,
+  "small": f.em(699.98),
+  "medium": f.em(899.98),
+  "large": f.em(1399.98),
 );
 
 @mixin breakpoints($size) {

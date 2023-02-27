@@ -7,3 +7,11 @@
     @error 'Dont put any units on the rem() function';
   }
 }
+
+@function em($pixel) {
+  @if math.is-unitless($pixel) {
+    @return math.div($pixel, 16) + em;
+  } @else {
+    @error 'Dont put any units on the em() function';
+  }
+}
